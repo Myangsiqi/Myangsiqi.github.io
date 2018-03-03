@@ -8,7 +8,7 @@ var bio={
       "contacts": {
         "mobile":"18361222039",
  		"email":"807218717@qq.com", 
-        "github": "还没有",
+        "github": "https://github.com/Myangsiqi",
         "location": "china university of mining and technology"
        },
      "welcomeMessage": "Lalalalala" ,
