@@ -1,7 +1,3 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
-
 var bio={
       "name": "杨思奇",
       "role": "前端工程师",
@@ -11,9 +7,9 @@ var bio={
         "github": "https://github.com/Myangsiqi",
         "location": "china university of mining and technology"
        },
-     "welcomeMessage": "Lalalalala" ,
-     "skills":["HTML","CSS","js","jQuery"],
-     "biopic": "images/1.jpg"
+     "welcomeMessage": "在光滑的冰面上容易摔倒，是因为上面没有坎坷" ,
+     "skills":["HTML","CSS","js","jQuery","Bootstrap","Canvas"],
+     "biopic": "images/2.jpg"
 }
 
 var formattedName= HTMLheaderName.replace(
@@ -50,20 +46,11 @@ var forImages=HTMLbioPic.replace(
  
  $("#skills").append(HTMLskillsStart);
  
-for (var i = 0; i <= 3; i++) {
+for (var i = 0; i <= 5; i++) {
 
  var forSkill=HTMLskills.replace(
  	"%data%",bio.skills[i])
  $("#skills").append(forSkill);
-
- // var forSkill=HTMLskills.replace(
- // 	"%data%",bio.skills[1])
- // $("#skills").append(forSkill);
-
- //  var forSkill=HTMLskills.replace(
- // 	"%data%",bio.skills[2])
- // $("#skills").append(forSkill);
-
 }
 
 var school={
@@ -156,7 +143,7 @@ var work= {
 }
 
 
-  for(job in work.jobs) {//改为标准for循环
+  for(job in work.jobs) {
 	$("#workExperience").append(HTMLworkStart);
 
 	var forAward=HTMLworkEmployer.replace(
@@ -188,22 +175,28 @@ var work= {
 var projects={
 	"projects":[
 	{
-		"title":"作品集",
-		"dates":"2017",
-		"description":"利用HTML和CSS将设计原型转换成符合W3C标准的静态页面",
-		"images":["images/1.gif","images/1.gif"]
-	},
-	{
 		"title":"动物卡片",
 		"dates":"2017",
-		"description":"啦啦啦啦啦啦",
-		"images":["images/1.gif","images/1.gif"]
+		"description":"利用HTML和CSS根据设计原型创意地设置网页样式",
+		"images":["images/1.png"]
+	},
+	{
+		"title":"作品集",
+		"dates":"2017",
+		"description":"利用HTML和CSS将设计原型转换成符合W3C标准的静态页面,<br>运用了FlexBox和响应式页面设计技术",
+		"images":["images/2.png"]
+	},
+	{
+		"title":"小游戏",
+		"dates":"2017",
+		"description":"运用面向对象的编程技巧，在视觉assets和游戏内循环引擎的基础上添加交互对象如玩家和敌人实例<br>综合运用了Javascript、Canvas等技术，通过原型链来管理对象属性，创建架构合理且性能完备的应用项目，并编写README文档",
+		"images":["images/3.png"]
 	}
   ]
 }
 
 projects.display=function(){
-	for(project in projects.projects) {//改为标准for循环
+	for(project in projects.projects) {
 	$("#projects").append(HTMLprojectStart);
 
 	var forTitle=HTMLprojectTitle.replace(
@@ -218,7 +211,6 @@ projects.display=function(){
 		"%data%",projects.projects[project].description);
 	$(".project-entry:last").append(
 		forDescription);
-	
 	if (projects.projects[project].images.length>0){
 		for(image in projects.projects[project].images){
 			var forImage=HTMLprojectImage.replace(

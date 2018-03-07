@@ -94,7 +94,7 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #f3f3f3;
   line-height: 28px;
 }
@@ -166,7 +166,7 @@ ul {
 .biopic {
   float: left;
  /* padding: 10px;*/
-  width: 200px;
+  width: 160px;
   display: none;
   margin-right: 10px;
 }
@@ -227,4 +227,16 @@ span {
   .biopic {
     display: block;
   }
+}
+
+
+.hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
