@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">	
+<head>	
+	<title>殷砸の小奇奇</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 	
+	<meta name="keywords" content="奇奇我宣你，殷砸喜欢奇奇~，奇奇七夕快乐哒" />	
+     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">	
+    <style>	
+        @font-face {font-family:myFont;src:url("zt.ttf")}  	
+    </style>	
+    <link href="default.css"type="text/css" rel="stylesheet">	
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="js/garden.js"></script>	
+    <script type="text/javascript" src="js/functions.js"></script>	
+</head>	
+<body>	
+	<div id="mainDiv">	
+	  <div id="content">	
+			<div id="code">	
+				<span class="comments">傻奇奇：<br>						<span class="space">七夕节快乐</br>	
+			<span class="space">听说七夕节你缺一个男票，这不，我把自己打包给你送过来了，退货无效的，因为发件人是我的心你问我为什么不曾和你告白过，但我觉得陪伴是最长情的告白，无论未来如何，无论欢笑或者是争吵，我都会陪着你，死皮赖脸地让你甩不掉，以此陪伴来弥补曾经缺失的告白，你还别觉得吃亏。其实我不知道在什么时候也不知道为什么，就开始喜欢陪着你，喜欢和你在一起的时光，我不喜欢说肉麻的话，你也不喜欢矫情的话语，但看今天大家都那么肉麻，你也不差这一麻两麻了。
+			</br>	
+			<span class="space">我刚走进你的世界。你却在我世界驻扎良久。而上天似乎有意捉弄我们，你每一个生日我都只能远远张望着你，在一起的第一个七夕我们便真的成了天各一方的牛郎织女。假期的两地相隔却让我突然有点不习惯没你的气息，突然不习惯没你的身影，万籁俱寂的深夜或是阳光明媚的早晨，只能把心底的郁闷与惆怅寂寞默默埋在心底发酵。
+			脉脉之情如一溪春水，快刀难斩断，随着时间蔓延，思念也随之越来越深。</br>	
+				
+		<span class="space">我很傻，但我知道自己只想陪着你。在这万千喜鹊聚会的夜晚，我只想静静地坐下来，把我的心用代码敲下来，送给你。
+</br>
+				<span class="space">也许世间万千种奇迹与缘分，只为让我遇见你而我只嫉妒你，有一个我这样好的男票(=￣ω￣=)　。哎呀，还是不会说情话，要不改天我多练练。
+<br><span class="space"></span>2015.8.20</span>		
+<span class="space"><a href="qiqi.html">惊喜还未结束哦，点我点我嘛。</a> </span>		
+			</div>	
+			<div id="loveHeart">	
+				<canvas id="garden"></canvas>	
+				<div id="words">	
+					<div id="messages">	
+						我们已经在一起：	
+						<div id="elapseClock"></div>	
+					</div>	
+					<div id="loveu">	
+						I will love you forever<br/>	
+						<div class="signature">by:殷砸</div>	
+					</div>	
+				</div>	
+			</div>	
+      </div>	
+		<div id="copyright">	
+            程序作者: yinzi<br />	
+			    版权所有 2015	
+	  </div>	
+	</div>	
+	<script type="text/javascript">	
+		var offsetX = $("#loveHeart").width() / 2;	
+		var offsetY = $("#loveHeart").height() / 2 - 55;	
+		var together = new Date();	
+		together.setFullYear(2015,7,9);	
+		together.setHours(0);	
+		together.setMinutes(0);	
+		together.setSeconds(0);	
+		together.setMilliseconds(0);	
+			
+		if (!document.createElement('canvas').getContext) {	
+			var msg = document.createElement("div");	
+			msg.id = "errorMsg";	
+			msg.innerHTML = "提醒您：呀IE版本太低了哦^_^<br/>"+	
+				"推荐使用浏览器 <a href='http://dl.pconline.com.cn/download/51614.html' target='_blank'>Chrome 14+</a>"+	
+				"/<a href='http://download.microsoft.com/download/0/4/9/049A037E-B6B4-4303-90BE-BA6CAE979674/IE10-Windows6.1-x86-zh-cn.exe' target='_blank'>IE 9+</a>"+	
+				"/<a href='http://download.firefox.com.cn/releases/partners/baidu/webins3.0/zh-CN/Firefox-setup.exe' target='_blank'>Firefox 7+</a>"+	
+				"/Safari 4+<br/>请先升级您的浏览器，效果很炫哦~~"; 	
+			document.body.appendChild(msg);	
+			$("#code").css("display", "none")	
+			$("#copyright").css("position", "absolute");	
+			$("#copyright").css("bottom", "10px");	
+		    document.execCommand("stop");	
+		} else {	
+			setTimeout(function () {	
+				adjustWordsPosition();	
+				startHeartAnimation();	
+			}, 5000);	
+	
+			timeElapse(together);	
+			setInterval(function () {	
+				timeElapse(together);	
+			}, 500);	
+	
+			adjustCodePosition();	
+			$("#code").typewriter();	
+		}	
+	</script>	
+		
+		
+<div style="display: none">	
+</body>	
+<script language="javascript">	
+function click() {	
+if (event.button==2) {	
+alert('By:	YinZi')	
+}	
+	
+}	
+	
+document.onmousedown=click	
+	
+</script>	
+<center> 	
+<audio src="http://87.js.cn/1.mp3" autoplay="autoplay">	
+</center>	
+</html>	
