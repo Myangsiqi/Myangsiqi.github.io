@@ -9,7 +9,7 @@ var bio={
        },
      "welcomeMessage": "在光滑的冰面上容易摔倒，是因为上面没有坎坷" ,
      "skills":["HTML","CSS","js","jQuery","Bootstrap","Canvas"],
-     "biopic": "https://github.com/Myangsiqi/Myangsiqi.github.io/blob/master/resumeBuilder/images/2.JPG"
+     "biopic": "images/2.JPG"
 }
 
 var formattedName= HTMLheaderName.replace(
